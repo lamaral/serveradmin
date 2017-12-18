@@ -11,16 +11,8 @@ setup(
     url='https://github.com/innogames/serveradmin',
     author='InnoGames System Administration',
     author_email='it@innogames.com',
-    packages=[
-        'adminapi',
-        'adminapi.dataset',     # XXX Deprecated
-        'adminapi.utils',       # XXX Deprecated
-    ],
+    packages=['adminapi'],
     version='1.2',
     long_description='Serveradmin client library',
-    entry_points={
-        'console_scripts': [
-            'adminapi=adminapi.cli:main',
-        ],
-    },
+    entry_points={'console_scripts': ['adminapi=adminapi.cli:main']},
 )
