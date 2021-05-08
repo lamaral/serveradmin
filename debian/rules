@@ -1,0 +1,5 @@
+#!/usr/bin/make -f  
+export PYBUILD_NAME=serveradmin
+export PYBUILD_DISABLE=test
+%:  
+	dh $@ --with python3 --buildsystem=pybuild
